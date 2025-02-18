@@ -11,7 +11,8 @@ return {
 				null_ls.builtins.formatting.stylua,
 				--JavaScript
 				null_ls.builtins.formatting.prettier,
-				require("none-ls.diagnostics.eslint_d"),
+				-- require("none-ls.diagnostics.eslint_d"),
+				null_ls.builtins.diagnostics.eslint_d,
 				--Python
 				null_ls.builtins.formatting.black,
 				--require("none-ls.diagnostics.pylint"), --in my case, nvim can't find pylint or isort

@@ -16,6 +16,7 @@ return{
 					"html",
 					"cssls",
 					"eslint",
+					"ast_grep",
 				}
 			})
 		end
@@ -41,6 +42,9 @@ return{
 				capabilities = capabilities
 			})
 			lspconfig.eslint.setup({
+				capabilities = capabilities
+			})
+			lspconfig.ast_grep.setup({
 				capabilities = capabilities
 			})
 			--Key Mappings 
